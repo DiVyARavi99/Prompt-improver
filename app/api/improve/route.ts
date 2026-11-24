@@ -5,7 +5,7 @@ const TARGETS = ["general", "coding", "image", "writing"] as const;
 type Target = (typeof TARGETS)[number];
  
 const MAX_CHARS = 2000;
-const MODEL = process.env.GROQ_MODEL || "llama-3.3-70b-versatile";
+const MODEL = process.env.GROQ_MODEL || "qwen/qwen3.8-27b";
  
 export async function POST(req: Request) {
   const apiKey = process.env.GROQ_API_KEY;
